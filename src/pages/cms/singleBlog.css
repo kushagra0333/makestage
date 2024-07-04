@@ -1,0 +1,35 @@
+.single-blog {
+  width: 50%;
+  margin-bottom: 4rem;
+}
+
+.blog-post-title {
+  margin-top: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.blog-content h4 {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.blog-footer {
+  background: #f1f1ef;
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+  margin-bottom: 4px;
+  padding: 16px 16px 16px 12px;
+}
+
+.blog-footer-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+@media (max-width: 768px) {
+  .single-blog {
+    width: 75%;
+  }
+}

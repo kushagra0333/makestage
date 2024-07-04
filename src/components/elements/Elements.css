@@ -1,0 +1,294 @@
+ .basic-card {
+  width: 18rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.basic-process {
+  border: none;
+}
+
+.card-image {
+  max-width: 80%;
+  /* Adjusted maxWidth to include padding */
+  height: auto;
+  /* Allow the image to resize vertically while maintaining aspect ratio */
+  border: 0.5px solid #000000;
+  /* Add white border of 2px */
+  box-sizing: border-box;
+  object-fit: cover;
+  display: flex;
+  margin-top: 10px;
+  /* Add margin to the top of the image wrapper */
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  width: 200px;
+  height: 200px;
+}
+
+.card-image:hover {
+  transform: scale(1.02);
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.blog-image-container {
+  position: relative; /* Ensure the container maintains its aspect ratio */
+  width: 100%; /* Set the width of the container */
+  padding-bottom: calc(2 / 3 * 100%);
+}
+
+.blog-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.blog-title {
+  padding-left: 0px !important;
+}
+.blog-title:hover {
+  color: #222222;
+}
+
+.blog-image:hover {
+  transform: scale(1.02);
+}
+
+.card-button {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.card-button-container {
+  display: flex;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Features CSS */
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #a6d0f7;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  /* Grey color until it reaches the icon */
+  /* Additional styles for centering the icon */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-description {
+  color: #666666;
+}
+
+.basic-feature {
+  border: none;
+  width: 25rem;
+}
+
+@media (max-width: 768px) {
+  .basic-feature {
+    width: 40rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .basic-feature {
+    height: 12rem;
+  }
+}
+
+.process-number {
+  width: 50px;
+  /* Adjust this value to fit the size of your number */
+  height: 50px;
+  /* Adjust this value to fit the size of your number */
+  border-radius: 50%;
+  /* Makes the shape circular */
+  background-color: #1c85e9;
+  /* Color of the filled circle */
+  color: #fff;
+  /* Color of the number */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .basic-card {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .mobile-arrow {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .basic-process {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .basic-process {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .number-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .process-title {
+    text-align: center;
+  }
+
+  .arrow-container {
+    display: none;
+  }
+
+  .icon-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobile-arrow {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .basic-process {
+    width: 62.5%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .basic-process {
+    width: 75%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .basic-card {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 2rem;
+  }
+}       
+/* horizontal progress bar */
+.vertical-progress-bar-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 7%;
+}
+
+.progress.vertical {
+  height: 100px; 
+  width: 200px;
+  background-color: transparent;
+  transition: height 0.5s ease; /* Smooth transition for height changes */
+}
+
+.vertical-progress-bar-steps {
+  position: relative;
+  display: flex;
+}
+
+.vertical-progress-bar-step {
+  display: flex;
+  align-items: center;
+  padding-right: 200px;
+  overflow-x: hidden;
+  z-index:2
+}
+
+.step-content {
+  position: relative;
+}
+
+.step-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  border: 3px solid #ccc;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.step-circle.completed {
+  background-color: rgba(0, 123, 255);
+  border-color: #ccc;
+}
+
+.step-circle.active {
+  
+  color: #fff;
+}
+.on-sotep{
+  border: 3px solid rgba(0, 123, 255);
+}
+.step-description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.vertical-progress-bar-line {
+  position: absolute;
+  top: 25px;
+  left: 10px; /* Adjusted position to cover half of the step */
+  transform: translateY(-50%);
+  height: 5px;
+  background-color: rgba(0, 123, 255);
+  transition: width 0.5s ease-in-out; /* Smooth transition for width changes */
+  z-index: 1;
+  font-family: "Montserrat", sans-serif;
+}

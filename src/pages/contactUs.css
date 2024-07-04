@@ -1,0 +1,171 @@
+.contact-form {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  color: #555555;
+}
+
+.contact-form-submitted {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  color: #555555;
+  overflow: scroll;
+}
+
+.contact-text-heading {
+  font-weight: bold;
+}
+
+.contact-text p {
+  color: #555555;
+}
+
+.contact-text ul {
+  color: #555555;
+}
+
+.contact-button {
+  font-weight: bold;
+  background-color: #1c85e9;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form .form-group:last-child {
+  margin-bottom: 0;
+}
+
+.contact-form .required {
+  color: red;
+}
+
+.contact-form .contact-button {
+  width: 100%;
+}
+
+.company-logos-contact {
+  gap: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.company-logos-contact img {
+  width: auto;
+  max-height: 30px; /* Adjust the maximum height of the logos */
+}
+
+/* Add this CSS to your existing styles or contactUs.css file */
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #1c85e9;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px #1c85e9;
+  animation:
+    fill 0.4s ease-in-out 0.4s forwards,
+    scale 0.3s ease-in-out 0.9s both;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 50px #1c85e9;
+  }
+}
+
+.contact-us-section{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.contact-us-container{
+  padding-left: 5.5rem;
+  padding-right: 5.5rem;
+}
+
+@media(max-width: 768px) {
+
+  .contact-text-column{
+    background-color: black;
+    color: white;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    padding-top: 4rem;
+  }
+
+  .company-logos-contact img {
+    width: auto;
+    max-height: 20px; /* Adjust the maximum height of the logos */
+  }
+    
+  .contact-text-mobile{
+    max-height: calc(var(--line-height) * 7 + 0.5px);
+    overflow: hidden;
+    margin-bottom: 0.3rem;
+  }
+  .contact-text p {
+    color: #dddddd;
+  }
+  
+  .contact-text ul {
+    color: #dddddd;
+  }
+
+  .contact-us-section{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .contact-us-container{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}

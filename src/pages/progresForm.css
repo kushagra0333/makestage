@@ -1,0 +1,9 @@
+.progress-form-container{
+    padding: 200px;
+    background-color: rgb(229, 241, 116);
+}
+.progress-form-wrapper{
+    background-color: white;
+    padding: 10px;
+    box-shadow: 2px 2px 200px 10px rgb(0, 0, 0);
+}

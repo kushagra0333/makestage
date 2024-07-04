@@ -1,0 +1,18 @@
+.cta-container {
+  padding: 55px;
+  color: #ffffff;
+  background: rgba(103, 20, 220, 0);
+  background: linear-gradient(0deg, rgb(9, 0, 1) 0%, rgb(20, 8, 8) 100%);
+}
+
+.cta-container h2 {
+  margin-bottom: 10px;
+}
+
+.cta-container p {
+  margin-bottom: 20px;
+}
+
+.cta-container .btn {
+  margin-top: 10px;
+}

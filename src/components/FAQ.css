@@ -1,0 +1,30 @@
+.accordion-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:hover {
+  box-shadow: var(--bs-accordion-btn-focus-box-shadow);
+}
+
+.accordion-button:not(.collapsed) {
+  color: #212529;
+  background-color: white;
+}
+
+.accordion-item:not(:first-of-type) {
+  border-top: var(--bs-accordion-border-width) solid
+    var(--bs-accordion-border-color);
+}
+
+.accordion-button {
+  font-weight: bold;
+}
+
+.accordion-container {
+  margin-top: 2rem;
+}

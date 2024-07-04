@@ -1,0 +1,73 @@
+
+.login-Button{
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(104, 104, 104);
+}
+.login-Button:hover{
+  color: black;
+}
+.main-menu {
+  font-weight: bold;
+}
+
+.capabilities-dropdown .dropdown-item {
+  /* Customize padding */
+  padding: 10px 20px; /* Example padding */
+}
+
+.logo {
+  max-width: 50px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+    background-color: white !important;
+  }
+
+  .capabilities-dropdown {
+    display: none;
+  }
+
+  .main-menu {
+    font-size: 1.2rem;
+    /* Adjust the value as needed */
+  }
+
+  .header-container.container {
+    max-width: 768px;
+    padding-left: 15px;
+    /* Adjust margin as needed */
+    padding-right: 15px;
+    /* Adjust margin as needed */
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .dropdown-item {
+    font-size: 1.1rem;
+  }
+
+  .nav-link:hover {
+    background-color: #f2f5f6;
+    /* Change to the desired highlight color */
+    /* You can adjust the highlight color as needed */
+  }
+}
+
+@media (min-width: 768px) {
+  .capabilities-link {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1537px) {
+  .header-container.container {
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
